@@ -1,5 +1,7 @@
 const defaultOptions = {
     elemName: 'p',
     containerSelector: 'body',
-    monitorInterval: 300
-}
+    fileNameContains: 'ClipboardInserter',
+    prependInstead: false,
+    monitorInterval: 300,
+};

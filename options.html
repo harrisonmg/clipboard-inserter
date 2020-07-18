@@ -1,29 +1,38 @@
 <html>
-  <head>
-    <meta charset="utf-8"/>
+
+<head>
+    <meta charset="utf-8" />
     <script src="default-options.js"></script>
     <script src="options.js"></script>
-    <link href="forms-min.css" rel="stylesheet"/>
-  </head>
-  <body>
+    <link href="forms-min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <b style="margin:0.5em 0.5em 0.5em 0.5em">Hover the inputs to read their descriptions.</b>
     <form class="pure-form pure-form-aligned">
-      <fieldset>
-	<div class="pure-control-group">
-	  <label for="elem-name">Element name </label>
-	  <input id="elem-name" type="text"
-		 title="Element name used when inserting the clipboard contents"/>
-	</div>
-	<div class="pure-control-group">
-	  <label for="container-selector">Container selector </label>
-	  <input id="container-selector" type="text"
-		 title="Css selector used to find element into which new elements will be inserted. Default value - 'body' - means that new elements will be appended at the end of the document."/>
-	</div>
-	<div class="pure-control-group">
-	  <label for="monitor-interval">Timer interval </label>
-	  <input id="monitor-interval" type="number" min="100" step="10"
-		 title="Time (in milliseconds) between clipboard checks. Low values may cause performance problems."/>
-	</div>
-      </fieldset>
+        <fieldset>
+            <div class="pure-control-group">
+                <label for="elem-name">Element name </label>
+                <input id="elem-name" type="text" title="Element name used when inserting the clipboard contents. Try using a 'pre' if you want to keep the newlines." />
+            </div>
+            <div class="pure-control-group">
+                <label for="container-selector">Container selector </label>
+                <input id="container-selector" type="text" title="Css selector used to find element into which new elements will be inserted. Default value - 'body' - means that new elements will be appended or prepended." />
+            </div>
+            <div class="pure-control-group">
+                <label for="monitor-interval">Timer interval </label>
+                <input id="monitor-interval" type="number" min="100" step="10" title="Time (in milliseconds) between clipboard checks. Low values may cause performance problems." />
+            </div>
+            <div class="pure-control-group">
+                <label for="filename-contains">Local file name contains </label>
+                <input id="filename-contains" type="text" title="Local files that contain this string will be automatically detected. Default value - 'ClipboardInserter' - means that any local file that contains the text 'ClipboardInserter' will be automatically detected." />
+            </div>
+            <div class="pure-control-group">
+                <label for="prepend-instead">Use prepend instead of append </label>
+                <input id="prepend-instead" type="checkbox" title="Prepend new text instead of appending. New text will be at the top." />
+            </div>
+        </fieldset>
     </form>
-  </body>
+</body>
+
 </html>
