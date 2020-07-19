@@ -1,7 +1,7 @@
 const defaultOptions = {
     elemName: 'p',
     containerSelector: 'body',
-    urlContins: 'ClipboardInserter',
+    urlContains: 'ClipboardInserter',
     prependInstead: false,
     monitorInterval: 300,
 };

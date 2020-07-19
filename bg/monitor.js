@@ -21,8 +21,8 @@ chrome.storage.onChanged.addListener((changes, area) => {
 });
 
 
-const pattern1 = "*:///*/*" + options.urlContins + "*";
-const pattern2 = "file:///*/*" + options.urlContins + "*";
+const pattern1 = "*://*/*" + options.urlContains + "*";
+const pattern2 = "file:///*/*" + options.urlContains + "*";
 
 const filter = {
     urls: [pattern1, pattern2]

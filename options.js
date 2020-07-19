@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const elemName = document.querySelector("#elem-name"),
         containerSelector = document.querySelector("#container-selector"),
-        urlContins = document.querySelector("#url-contains"),
+        urlContains = document.querySelector("#url-contains"),
         prependInstead = document.querySelector("#prepend-instead"),
         monitorInterval = document.querySelector("#monitor-interval");
 
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         containerSelector.value = o.containerSelector;
         monitorInterval.value = o.monitorInterval;
         prependInstead.checked = o.prependInstead;
-        urlContins.value = o.urlContins;
+        urlContains.value = o.urlContains;
     });
     elemName.onchange = () => storage.set({
         elemName: elemName.value
@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
     prependInstead.onchange = () => storage.set({
         prependInstead: prependInstead.checked
     });
-    urlContins.onchange = () => storage.set({
-        urlContins: urlContins.value
+    urlContains.onchange = () => storage.set({
+        urlContains: urlContains.value
     });
     containerSelector.onchange = () => storage.set({
         containerSelector: containerSelector.value
