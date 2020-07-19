@@ -1,4 +1,4 @@
-console.log("I'm alive");
+// console.log("I'm alive");
 
 let previousContent = "";
 let listeningTabs = [];
@@ -36,7 +36,7 @@ function handleUpdated(tabId, changeInfo, tabInfo) {
     if (changeInfo.status == "loading" && changeInfo.url != null) {
         const index = listeningTabs.indexOf(tabId);
         if (index >= 0) {
-            // console.log("REMOVETAB: ", uninject);
+            // console.log("REMOVETAB because refreshed: ", uninject);
             toggleTab(tabId, 1);
         }
     } else {
@@ -48,6 +48,19 @@ function handleUpdated(tabId, changeInfo, tabInfo) {
 }
 
 browser.tabs.onUpdated.addListener(handleUpdated, filter);
+
+function handleRemoved(tabId, removeInfo) {
+    // console.log("Tab: " + tabId + " is closing");
+    // console.log("Window ID: " + removeInfo.windowId);
+    // console.log("Window is closing: " + removeInfo.isWindowClosing);
+    const index = listeningTabs.indexOf(tabId);
+    if (index >= 0) {
+        // console.log("REMOVETAB because closed: ", uninject);
+        toggleTab(tabId, 1);
+    }
+}
+
+browser.tabs.onRemoved.addListener(handleRemoved);
 
 /*
 //Incomplete context menu stuff. Not needed.
@@ -107,8 +120,8 @@ function toggleTab(id, removetab) {
         chrome.browserAction.setBadgeText({
             text: "",
             tabId: id
-		});
-		return;
+        });
+        return;
     }
     if (index >= 0) {
         uninject(id);
