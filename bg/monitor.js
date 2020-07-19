@@ -22,9 +22,10 @@ chrome.storage.onChanged.addListener((changes, area) => {
 
 
 const pattern1 = "*:///*/*" + options.urlContins + "*";
+const pattern2 = "file:///*/*" + options.urlContins + "*";
 
 const filter = {
-    urls: [pattern1]
+    urls: [pattern1, pattern2]
 };
 
 function handleUpdated(tabId, changeInfo, tabInfo) {
