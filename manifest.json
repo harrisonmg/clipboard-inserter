@@ -8,34 +8,35 @@
     "icons": {},
 
     "applications": {
-	"gecko": {
-	    "id": "@clipboard-inserter"
-	}
+        "gecko": {
+            "id": "@clipboard-inserter"
+        }
     },
-    
+
     "permissions": [
-	"activeTab",
-	"clipboardRead",
-	"storage",
-    "tabs",
-	"file://*/*"
+        "activeTab",
+        "clipboardRead",
+        "storage",
+        "tabs",
+        "file://*/*",
+        "*://*/*"
     ],
 
     "browser_action": {
-	"browser_style": true,
-	"default_icon": {
-	    "16": "icon/icon16.png",
-	    "32": "icon/icon32.png",
-	    "64": "icon/icon64.png"
-	},
-	"default_title": "Toggle clipboard inserter"
+        "browser_style": true,
+        "default_icon": {
+            "16": "icon/icon16.png",
+            "32": "icon/icon32.png",
+            "64": "icon/icon64.png"
+        },
+        "default_title": "Toggle Clipboard Inserter"
     },
-    
+
     "background": {
-	"page": "bg/index.html"
+        "page": "bg/index.html"
     },
 
     "options_ui": {
-	"page": "options.html"
+        "page": "options.html"
     }
 }

@@ -49,6 +49,32 @@ function handleUpdated(tabId, changeInfo, tabInfo) {
 
 browser.tabs.onUpdated.addListener(handleUpdated, filter);
 
+/*
+//Incomplete context menu stuff. Not needed.
+let contextArray = [];
+contextArray.push('page');
+contextArray.push('frame');
+contextArray.push('link');
+contextArray.push('selection');
+
+let item = {
+    id: 'menu_' + 1,
+    title: "Toggle Clipboard Inserter",
+    contexts: contextArray,
+    documentUrlPatterns: ['<all_urls>', 'file:///*'],
+    onclick: toggletabMenu
+};
+item.icons = {
+    16: "icon/icon16.png",
+    32: "icon/icon32.png"
+};
+chrome.contextMenus.create(item);
+
+function toggletabMenu(info) {
+    console.log(info);
+}
+*/
+
 
 chrome.browserAction.onClicked.addListener(() => {
     chrome.tabs.query({
