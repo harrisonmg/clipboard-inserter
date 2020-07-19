@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const elemName = document.querySelector("#elem-name"),
         containerSelector = document.querySelector("#container-selector"),
-        fileNameContains = document.querySelector("#filename-contains"),
+        urlContins = document.querySelector("#url-contains"),
         prependInstead = document.querySelector("#prepend-instead"),
         monitorInterval = document.querySelector("#monitor-interval");
 
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         containerSelector.value = o.containerSelector;
         monitorInterval.value = o.monitorInterval;
         prependInstead.checked = o.prependInstead;
-        fileNameContains.value = o.fileNameContains;
+        urlContins.value = o.urlContins;
     });
     elemName.onchange = () => storage.set({
         elemName: elemName.value
@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
     prependInstead.onchange = () => storage.set({
         prependInstead: prependInstead.checked
     });
-    fileNameContains.onchange = () => storage.set({
-        fileNameContains: fileNameContains.value
+    urlContins.onchange = () => storage.set({
+        urlContins: urlContins.value
     });
     containerSelector.onchange = () => storage.set({
         containerSelector: containerSelector.value
