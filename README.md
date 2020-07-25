@@ -8,6 +8,12 @@ There could be more that I forgot.
 I am very willing to send a push request to update kmltml/clipboard-inserter but with this many changes I'm not sure what the creator would think about that.  
 Let me know.
 
+# Example HTML page for Clipboard Inserter
+
+### You can find the downloadable example page here: https://github.com/Onurtag/ClipboardInserter_html  
+
+
+
 # Clipboard Inserter
 
 A simple addon whose purpose is to automatically insert contents of clipboard into the page.
