@@ -7,7 +7,8 @@
 
 I am very willing to send a push request to update the main repo (kmltml/clipboard-inserter) but with this many changes and added permissions I'm not sure what the addon creator would think about that. Let me know.  
 
-For now you can download the repo and add it as an extension using a browser that can disable addon signing requirements such as **Firefox Developer Edition**.  
+### **Installation (Firefox only)**  
+For now you can download the signed .xpi file under [**Releases**](https://github.com/Onurtag/clipboard-inserter/releases/latest) and install it using drag-and-drop.  
 
 
 # Example HTML page for Clipboard Inserter
