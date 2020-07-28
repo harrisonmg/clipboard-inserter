@@ -160,15 +160,18 @@ function notifyForeground(id, text) {
 
 
 function checkClipboard() {
-    const pasteTarget = document.querySelector("#paste-target");
-    pasteTarget.innerText = "";
-    pasteTarget.focus();
-    document.execCommand("paste");
-    const content = pasteTarget.innerText;
-    if (content.trim() !== previousContent.trim() && content != "") {
-        listeningTabs.forEach(id => notifyForeground(id, content));
-        previousContent = content;
-    }
+    //Check for clipboard changes with way better performance
+    let trimmedContent = "";
+    navigator.clipboard.readText().then(clipContent => {
+        trimmedContent = clipContent.trim();
+        if (trimmedContent == "" || previousContent == trimmedContent) {
+            return;
+        } else {
+            previousContent = trimmedContent;
+            listeningTabs.forEach(id => notifyForeground(id, trimmedContent));
+        }
+    });
+
 }
 
 function updateTimer() {
