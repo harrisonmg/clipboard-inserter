@@ -1,15 +1,15 @@
 {
     "manifest_version": 2,
-    "name": "Clipboard Inserter",
+    "name": "Clipboard Inserter Redux",
     "version": "0.5.0",
 
-    "description": "A simple addon that inserts clipboard contents into the page. Uses icon made by Google from www.flaticon.com licensed by CC 3.0 BY",
+    "description": "A simple addon that inserts clipboard contents into the page. Uses icon made by Google from www.flaticon.com licensed by CC 3.0 BY. An update for the original addon \"Clipboard Inserter\".",
 
     "icons": {},
 
     "applications": {
         "gecko": {
-            "id": "@clipboard-inserter"
+            "id": "@clipboard-inserter-redux"
         }
     },
 
@@ -29,7 +29,7 @@
             "32": "icon/icon32.png",
             "64": "icon/icon64.png"
         },
-        "default_title": "Toggle Clipboard Inserter"
+        "default_title": "Toggle Clipboard Inserter Redux"
     },
 
     "background": {
