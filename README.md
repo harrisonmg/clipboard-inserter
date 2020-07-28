@@ -1,11 +1,14 @@
 # Fork information  
 
-- ADD automatic url detection with an option (requires tabs permission and requires permission to access all urls)  
+- UPDATE the clipboard reading method to reduce the performance impact of the addon by ~90%  
+- ADD automatic url detection with an option (requires new "tabs" and "access all urls" permissions)  
 - ADD prepend/append option  
-- FORMAT files and add semicolons (sorry, I had to do it.)  
+- FORMAT files and add semicolons (sorry I had to do it.)  
 
-I am very willing to send a push request to update kmltml/clipboard-inserter but with this many changes I'm not sure what the creator would think about that.  
-Let me know.
+I am very willing to send a push request to update the main repo (kmltml/clipboard-inserter) but with this many changes and added permissions I'm not sure what the addon creator would think about that. Let me know.  
+
+For now you can download the repo and add it as an extension using a browser that can disable addon signing requirements such as **Firefox Developer Edition**.  
+
 
 # Example HTML page for Clipboard Inserter
 
