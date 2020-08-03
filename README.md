@@ -13,7 +13,7 @@ For now you can download the signed .xpi file under [**Releases**](https://githu
 
 # Example HTML page for Clipboard Inserter
 
-### You can find the downloadable example page here: https://github.com/Onurtag/ClipboardInserter_html  
+You can find the downloadable example page here: https://github.com/Onurtag/ClipboardInserter_html  
 
 
 
