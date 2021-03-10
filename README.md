@@ -1,4 +1,6 @@
-# Fork information  
+
+# Clipboard Inserter Redux  
+## Fork information  
 
 - ✅ Updated the clipboard reading method to reduce the performance impact of the addon by ~90%. This also lets you copy a paragraph with its newlines intact.  
 - ➕ Added automatic url detection with an option (requires new "tabs" and "access all urls" permissions)  
@@ -12,13 +14,14 @@ I am very willing to send a push request to update the main repo (kmltml/clipboa
 For now you can download the signed .xpi file under [**Releases**](https://github.com/Onurtag/clipboard-inserter/releases/latest) and install it using drag-and-drop.  
 
 
-# Example HTML page for Clipboard Inserter
+## Example HTML page for Clipboard Inserter
 
 You can find the downloadable example page here: https://github.com/Onurtag/ClipboardInserter_html  
 
+&nbsp;  
 
-
-# Clipboard Inserter
+*(Original readme below)*  
+# Clipboard Inserter  
 
 A simple addon whose purpose is to automatically insert contents of clipboard into the page.
 
