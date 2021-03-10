@@ -1,9 +1,10 @@
 # Fork information  
 
-- UPDATE the clipboard reading method to reduce the performance impact of the addon by ~90%  
-- ADD automatic url detection with an option (requires new "tabs" and "access all urls" permissions)  
-- ADD prepend/append option  
-- FORMAT files and add semicolons (sorry I had to do it.)  
+- ✅ Updated the clipboard reading method to reduce the performance impact of the addon by ~90%. This also lets you copy a paragraph with its newlines intact.  
+- ➕ Added automatic url detection with an option (requires new "tabs" and "access all urls" permissions)  
+- ➕ Added prepend/append option  
+- 🔄 Added prepend/append option  
+- 🔄 Formatted all files and added semicolons (sorry I had to do it.)  
 
 I am very willing to send a push request to update the main repo (kmltml/clipboard-inserter) but with this many changes and added permissions I'm not sure what the addon creator would think about that. Let me know.  
 
