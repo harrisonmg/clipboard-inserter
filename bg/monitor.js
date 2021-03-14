@@ -117,10 +117,12 @@ function toggleTab(id, removetab) {
         // console.log("toggleTab -> NEWuninject");
         listeningTabs.splice(index, 1);
         updateTimer();
+        /* 
         chrome.browserAction.setBadgeText({
             text: "",
             tabId: id
         });
+        */
         return;
     }
     if (index >= 0) {
