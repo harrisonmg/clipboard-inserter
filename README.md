@@ -10,8 +10,11 @@
 
 I am very willing to send a push request to update the main repo (kmltml/clipboard-inserter) but with this many changes and added permissions I'm not sure what the addon creator would think about that. Let me know.  
 
-### **Installation (Firefox only)**  
-For now you can download the signed .xpi file under [**Releases**](https://github.com/Onurtag/clipboard-inserter/releases/latest) and install it using drag-and-drop.  
+### **Installation (Firefox)**  
+You can download the signed .xpi file under [**Releases**](https://github.com/Onurtag/clipboard-inserter/releases/latest) and install it using drag-and-drop.  
+
+### **Installation (Some Chromium browsers)**  
+If your Chromium browser fork is able to install unpacked extensions (such as **Vivaldi**); you can download the [**chromium branch zip**](https://github.com/Onurtag/clipboard-inserter/archive/refs/heads/clipboard-inserter-chrome.zip) and install it as an unpacked extension.  
 
 
 ## Example HTML page for Clipboard Inserter
