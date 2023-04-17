@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Clipboard Inserter Redux",
-    "version": "0.5.1",
+    "version": "0.5.2",
     "description": "A simple addon that inserts clipboard contents into the page. Uses icon made by Google from www.flaticon.com licensed by CC 3.0 BY. An update for the original addon \"Clipboard Inserter\".",
     "homepage_url": "https://github.com/Onurtag/clipboard-inserter/",
     "icons": {
