@@ -20,16 +20,12 @@ chrome.storage.onChanged.addListener((changes, area) => {
     }
 });
 
-
-const pattern1 = "*://*/*" + options.urlContains + "*";
-const pattern2 = "file:///*/*" + options.urlContains + "*";
-
-const filter = {
-    urls: [pattern1, pattern2]
-};
-
 function handleUpdated(tabId, changeInfo, tabInfo) {
     //toggle tab if it is detected by the filter
+    if (tabInfo.url.includes(options.urlContains) === false) {
+        return;
+    }
+    // console.log("Matched tab url", tabInfo.url);
     // console.log(`Updated tab: ${tabId}`);
     // console.log("Changed attributes: ", changeInfo);
     // console.log("New tab Info: ", tabInfo);
@@ -47,7 +43,7 @@ function handleUpdated(tabId, changeInfo, tabInfo) {
     }
 }
 
-browser.tabs.onUpdated.addListener(handleUpdated, filter);
+browser.tabs.onUpdated.addListener(handleUpdated);
 
 function handleRemoved(tabId, removeInfo) {
     // console.log("Tab: " + tabId + " is closing");
@@ -91,9 +87,9 @@ function toggletabMenu(info) {
 
 chrome.browserAction.onClicked.addListener(() => {
     chrome.tabs.query({
-            active: true,
-            currentWindow: true
-        },
+        active: true,
+        currentWindow: true
+    },
         ([t]) => toggleTab(t.id, 0));
 });
 
@@ -178,7 +174,7 @@ function checkClipboard() {
 
 function updateTimer() {
     function stop() {
-        clearInterval(timer.id);
+        clearInterval(timer?.id);
         timer = null;
     }
 
