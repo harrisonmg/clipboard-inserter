@@ -22,7 +22,7 @@ chrome.storage.onChanged.addListener((changes, area) => {
 
 function handleUpdated(tabId, changeInfo, tabInfo) {
     //toggle tab if it is detected by the filter
-    if (tabInfo.url.includes(options.urlContains) === false) {
+    if (tabInfo.url.includes(encodeURI(options.urlContains)) === false) {
         return;
     }
     // console.log("Matched tab url", tabInfo.url);
