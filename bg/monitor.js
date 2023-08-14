@@ -113,7 +113,7 @@ function toggleTab(id, removetab) {
         // console.log("toggleTab -> NEWuninject");
         listeningTabs.splice(index, 1);
         updateTimer();
-        /* 
+        /*
         chrome.browserAction.setBadgeText({
             text: "",
             tabId: id
@@ -161,7 +161,7 @@ function checkClipboard() {
     //Check for clipboard changes with way better performance
     let trimmedContent = "";
     navigator.clipboard.readText().then(clipContent => {
-        trimmedContent = clipContent.trim();
+        trimmedContent = clipContent.trim() + "\n";
         if (trimmedContent == "" || previousContent == trimmedContent) {
             return;
         } else {
